@@ -9,15 +9,13 @@ import AboutPage from '../pages/AboutPage'
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/price" element={<PricePage />} />
-
-      <Route path="/contact" element={<ContactPage />} /> 
-      <Route path="/gallery" element={<GalleryPage />} /> 
-      <Route path="/about" element={<AboutPage />} /> 
-
-
-      {/* <Route path="/about" element={<About />} /> */}
+      <Route path="" element={<Home />} />
+      <Route path="price" element={<PricePage />} />
+      <Route path="contact" element={<ContactPage />} />
+      <Route path="gallery" element={<GalleryPage />} />
+      <Route path="about" element={<AboutPage />} />
+      <Route path="*" element={<div>Page Not Found</div>} />
     </Routes>
   )
 }
+
