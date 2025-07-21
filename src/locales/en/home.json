@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "title": "Moon",
+    "highlight": "Bowling",
+    "subtitle": "Discover the most modern bowling center in Riga\\nWhere every throw becomes an adventure\\nBook your lane today!"
+  },
+  "our_center": {
+    "first_word": "OUR",
+    "second_word": "CENTER"
+  },
+
+  "about_us" : {
+    "image_alt": "Moon Bowling Center",
+    "title": "About Moon Bowling Center",
+    "description": {
+        "part1": "Bowling center",
+        "highlight": "Moon",
+        "part2": "is one of the leading bowling centers in Riga, offering unforgettable entertainment for families, friends, and corporate events.",
+        "part3": "Moon Bowling is the perfect place for corporate events, birthday celebrations and family entertainment in Riga. We also organize official bowling tournaments and competitions, providing an exciting atmosphere for all visitors."
+    },
+    "advantages": {
+        "title": "Our advantages",
+        "items": [
+        {
+            "strong": "12 modern bowling lanes",
+            "text": "with automatic score registration and high-quality equipment"
+        },
+        {
+            "strong": "Professional coaches",
+            "text": "who will help both beginners and experienced players improve their skills"
+        },
+        {
+            "strong": "Recreation areas and bar",
+            "text": "with a wide selection of drinks and snacks - perfect for relaxing after the game"
+        }
+        ]
+    },
+    "buttons": {
+        "reserve": "Book time",
+        "learn_more": "Learn more"
+    }
+  },
+  
+  "reservation": {
+    "badge": "RESERVATIONS",
+    "title": {
+      "part1": "Book your",
+      "part2": "bowling party in Riga today!"
+    },
+    "description": "The perfect place for birthdays, friend gatherings or corporate events in central Riga. Quick and easy booking, friendly atmosphere and modern bowling lanes guarantee an unforgettable experience!",
+    "cta": "Book now",
+    "info": {
+      "working_hours": {
+        "title": "Working hours",
+        "days": "Monday - Sunday",
+        "hours": "12:00 - 00:00"
+      },
+      "location": {
+        "title": "Location",
+        "address": "Vaidavas street 4",
+        "city": "Riga, Latvia"
+      },
+      "phone": {
+        "title": "Call us",
+        "number": "+371 12345678",
+        "href": "+37112345678"
+      }
+    }
+  },
+
+  
+  "services": {
+    "pricing": {
+      "title": "Pricing",
+      "description": "Check our bowling lane prices on weekdays, weekends and special party offers.",
+      "highlight": "From €12 per hour"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "description": "Open Monday to Friday 10:00–23:00, until 01:00 on weekends - for night bowling entertainment.",
+      "highlight": "Bowling fun until late evening"
+    },
+    "menu": {
+      "title": "Menu",
+      "description": "Enjoy delicious burgers, pizza, snacks and refreshing drinks in a bowling atmosphere with friends and family.",
+      "highlight": "Try our special burger"
+    }
+  }
+
+}

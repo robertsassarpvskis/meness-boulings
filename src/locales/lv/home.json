@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "title": "Mēness",
+    "highlight": "Boulings",
+    "subtitle": "Atklāj modernāko boulinga centru Rīgā\\nKur katrs metiens kļūst par piedzīvojumu\\nRezervē celiņu jau šodien!"
+  },
+  "our_center": {
+    "first_word": "MŪSU",
+    "second_word": "CENTRS"
+  },
+  "about_us": {
+  "image_alt": "Boulinga centrs Mēness",
+  "title": "Par boulinga centru Mēness",
+  "description": {
+    "part1": "Boulinga centrs",
+    "highlight": "Mēness",
+    "part2": "ir viens no vadošajiem boulinga centriem Rīgā, kas piedāvā neaizmirstamu izklaidi ģimenēm, draugiem un korporatīviem pasākumiem.",
+    "part3": "Mēness Boulings ir ideāla vieta korporatīviem pasākumiem, dzimšanas dienu svinībām un ģimenes izklaidei Rīgā. Mēs organizējam arī oficiālus boulinga turnīrus un sacensības, nodrošinot aizraujošu atmosfēru visiem apmeklētājiem."
+  },
+  "advantages": {
+    "title": "Mūsu priekšrocības",
+    "items": [
+      {
+        "strong": "12 moderni boulinga celiņi",
+        "text": "ar automātisku rezultātu reģistrāciju un augstas kvalitātes aprīkojumu"
+      },
+      {
+        "strong": "Profesionāli treneri",
+        "text": "kas palīdzēs gan iesācējiem, gan pieredzējušiem spēlētājiem uzlabot prasmes"
+      },
+      {
+        "strong": "Atpūtas zonas un bārs",
+        "text": "ar plašu dzērienu un uzkodu izvēli - ideāli atpūtai pēc spēles"
+      }
+    ]
+  },
+  "buttons": {
+    "reserve": "Rezervēt laiku",
+    "learn_more": "Uzzināt vairāk"
+  }
+    },
+    
+  "reservation": {
+    "badge": "REZERVĀCIJAS",
+    "title": {
+      "part1": "Rezervē savu",
+      "part2": "boulinga ballīti Rīgā jau šodien!"
+    },
+    "description": "Ideāla vieta dzimšanas dienām, draugu tikšanās reizēm vai uzņēmuma pasākumiem Rīgas centrā. Ātra un vienkārša rezervācija, draudzīga atmosfēra un moderni boulinga celiņi garantē neaizmirstamu pieredzi!",
+    "cta": "Rezervēt tagad",
+    "info": {
+      "working_hours": {
+        "title": "Darba laiks",
+        "days": "Pirmdiena - Svētdiena",
+        "hours": "12:00 - 00:00"
+      },
+      "location": {
+        "title": "Atrašanās vieta",
+        "address": "Vaidavas iela 4",
+        "city": "Rīga, Latvija"
+      },
+      "phone": {
+        "title": "Zvaniet mums",
+        "number": "+371 12345678",
+        "href": "+37112345678"
+      }
+    }
+  },
+
+  
+  "services": {
+    "pricing": {
+      "title": "Cenas",
+      "description": "Apskati mūsu boulinga celiņu cenas darba dienās, brīvdienās un īpašos ballīšu piedāvājumus.",
+      "highlight": "No €12 stundā"
+    },
+    "hours": {
+      "title": "Darba laiks",
+      "description": "Atvērts no pirmdienas līdz piektdienai 10:00–23:00, brīvdienās līdz 01:00 – nakts boulinga izklaidei.",
+      "highlight": "Boulinga izklaide līdz vēlam vakaram"
+    },
+    "menu": {
+      "title": "Ēdienkarte",
+      "description": "Izbaudi gardus burgerus, picu, uzkodas un atsvaidzinošus dzērienus boulinga atmosfērā kopā ar draugiem un ģimeni.",
+      "highlight": "Izmēģini mūsu īpašo burgeru"
+    }
+  }
+
+
+}

@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goblin+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Floating animation (optional) */
+@keyframes slow-float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+:root {
+  --navbar-bg: #293E80;
+  --navbar-bg-scrolled: #1D2A5B;
+  --link-color: #C70039;
+  --link-hover: #FF5733;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-bebeu {
+  font-family: "Bebas Neue", static;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nav-link {
+  position: relative; /* Make sure it's in CSS too, but you're adding it via class now */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust for spacing below text */
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #a855f7, #c084fc);
+  box-shadow: 0 0 8px #c084fcaa;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+
+.header-1 {
+  position: relative;
+  background-image: url('/src/assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.header-2 {
+  position: relative;
+  background-image: url('/src/assets/bowling2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header-3 {
+  position: relative;
+  background-image: url('/src/assets/billiard.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.header-1::before , .header-2::before , .header-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Gradient fade to EAA332 (gold) */
+.header-1::after , .header-2::after , .header-3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), #fed273);
+  z-index: 2;
+}
+
+/* Ensure content appears above overlays */
+.header-1 > * , .header-2 > * , .header-3 > * {
+  position: relative;
+  z-index: 3;
+}
+
+
+.animate-slow-float {
+  animation: slow-float 6s ease-in-out infinite;
+}
+
+/* Fade-in animation */
+
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
