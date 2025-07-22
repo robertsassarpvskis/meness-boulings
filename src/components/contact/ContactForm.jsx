@@ -79,7 +79,7 @@ const ContactForm = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="max-w-3xl mx-auto px-4 py-5 rounded-3xl "
+      className="max-w-7xl mx-auto  py-5 rounded-3xl "
     >
       <div className="mb-10 text-center">
         <div className="inline-flex text-6xl font-bebeu font-bold text-[#FDB927] rounded-lg backdrop-blur-sm">     
@@ -104,7 +104,7 @@ const ContactForm = () => {
       </AnimatePresence>
 
       <form onSubmit={handleSubmit} className="space-y-8">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2">
           <InputField
             id="name"
             label="Full Name"

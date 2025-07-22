@@ -25,18 +25,30 @@ export default function Home() {
         backgroundClass="header-1"
       />
 
-      <div className="p-6 text-center bg-[#fed273] min-h-screen flex flex-col items-center">
+      <div className="p-6 bg-[#fed273] min-h-screen">
         <ImageTextSection />
         <ServiceCards />
-        <div className="max-w-7xl mx-auto mb-20">
-          <h2 className="text-6xl font-bold text-[#552583] mb-8 text-center mt-12 font-bebeu">
-            <span className="text-[#552583]">{t('our_center.first_word')}</span> {t('our_center.second_word')}
-          </h2>
-          <GallerySwiper galerijasAtteli={galerijasAtteli} />
+        
+        <div className="max-w-7xl mx-auto mb-40 ">
+          <div className="max-w-7xl mx-auto mb-16 px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-center font-bebeu leading-tight">
+              <span className="text-[#552583] drop-shadow-sm">{t('our_center.first_word')}</span>{' '}
+              <span className="text-[#df9427] drop-shadow-sm">{t('our_center.second_word')}</span>
+            </h2>
+          </div>
+
+
+
+          <div className="rounded-3xl overflow-hidden  bg-transparent">
+            <GallerySwiper galerijasAtteli={galerijasAtteli} />
+          </div>
         </div>
+
+
         <ReservationSection />
         <Map />
       </div>
+
     </>
   );
 }

@@ -11,7 +11,9 @@
 
   "about_us": {
     "image_alt": "Боулинг-центр Луна",
-    "title": "О боулинг-центре Луна",
+    "title_start": "О боулинг-центре",
+    "title_accent": "центре Mēness",
+
     "description": {
         "part1": "Боулинг-центр",
         "highlight": "Луна",

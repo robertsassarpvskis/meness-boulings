@@ -10,7 +10,8 @@
   },
   "about_us": {
   "image_alt": "Boulinga centrs Mēness",
-  "title": "Par boulinga centru Mēness",
+  "title_start": "Par boulinga",
+  "title_accent": "centru Mēness",
   "description": {
     "part1": "Boulinga centrs",
     "highlight": "Mēness",

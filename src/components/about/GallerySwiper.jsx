@@ -37,7 +37,7 @@ const GallerySwiper = ({ galerijasAtteli }) => {
         {galerijasAtteli.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative h-60 sm:h-80 md:h-[400px] lg:h-[500px] xl:h-[580px] w-full rounded-2xl overflow-hidden shadow-xl"
+              className="relative h-60 sm:h-80 md:h-[400px] lg:h-[500px] xl:h-[580px] w-full rounded-3xl overflow-hidden  bg-cover bg-center"
             >
               <img
                 src={img}
@@ -80,7 +80,7 @@ const GallerySwiper = ({ galerijasAtteli }) => {
         width: 20px;
         height: 5px;
         display: inline-block;
-        background-color: #7b4fe8;
+        // background-color: #7b4fe8;
         border-radius: 3px;
         transition: all 0.3s ease;
         opacity: 0.5;

@@ -11,7 +11,9 @@
 
   "about_us" : {
     "image_alt": "Moon Bowling Center",
-    "title": "About Moon Bowling Center",
+    "title_start": "About the bowling ",
+    "title_accent": "center Mēness",
+
     "description": {
         "part1": "Bowling center",
         "highlight": "Moon",

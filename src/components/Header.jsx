@@ -7,35 +7,25 @@ const Hero = ({
   backgroundClass = '', 
 }) => {
   return (
-    <div className={`relative h-screen w-full overflow-hidden ${backgroundClass}`}>
+    <div className={`relative min-h-[90vh] w-full overflow-hidden flex items-center justify-center ${backgroundClass}`}>
       {/* Background layer can be customized via backgroundClass */}
       <div className="absolute inset-0 z-0"></div>
 
       {/* Centered content */}
-      <div className="relative z-10 h-full w-full flex items-center justify-center">
-        <div className="px-4 text-center">
-          <h1 className="text-5xl md:text-9xl font-semibold font-bebeu text-white mb-0 tracking-tight uppercase">
-            {title} <span className="text-[#FDB927]">{highlight}</span>
-          </h1>
-          
-          {subtitle && (
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              {subtitle}
-            </p>
-          )}
-           
-        </div>
+      <div className="relative z-10 w-full px-4 text-center">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-semibold font-bebeu text-white tracking-tight uppercase leading-tight mb-4">
+          {title} <span className="text-[#FDB927]">{highlight}</span>
+        </h1>
+        
+        {subtitle && (
+          <p className="text-lg sm:text-lg md:text-xl text-white/80 max-w-xl mx-auto mt-4 leading-relaxed">
+            {subtitle}
+          </p>
+        )}
       </div>
     </div>
   );
 };
 
-// Hero.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   highlight: PropTypes.string,
-//   subtitle: PropTypes.string,
-//   backgroundClass: PropTypes.string,
-//   height: PropTypes.string,
-// };
 
 export default Hero;

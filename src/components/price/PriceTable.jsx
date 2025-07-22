@@ -15,7 +15,7 @@ const PriceTable = () => {
        
 
         {/* Bowling prices */}
-        <div className="grid md:grid-cols-2 gap-8 mb-10">
+        <div className="grid md:grid-cols-2 gap-4 mb-10">
           {/* Regular prices */}
           <div className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10">
             <h3 className="text-2xl font-bold text-white mb-6 pb-2 border-b border-[#FDB927]/40">

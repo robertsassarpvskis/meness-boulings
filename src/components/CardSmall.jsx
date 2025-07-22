@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 
-const ServiceCard = ({ icon, title, description, highlight, bgImage, link, children }) => {
+const CardSmall = ({ icon, title, description, highlight, bgImage, link, children }) => {
   const { t } = useTranslation('translation');
 
   return (
@@ -78,4 +78,4 @@ const ServiceCard = ({ icon, title, description, highlight, bgImage, link, child
   );
 };
 
-export default ServiceCard;
+export default CardSmall;
