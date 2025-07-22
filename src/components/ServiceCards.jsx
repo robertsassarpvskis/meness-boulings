@@ -23,7 +23,7 @@ const ServiceCards = () => {
       description: t('services.pricing.description'),
       highlight: t('services.pricing.highlight'),
       bgImage: image,
-      link: "/meness-boulings/price"
+      link: "/price"
     },
     {
       icon: <FaClock className="text-2xl" />,
@@ -31,7 +31,7 @@ const ServiceCards = () => {
       description: t('services.hours.description'),
       highlight: t('services.hours.highlight'),
       bgImage: image2,
-      link: "/meness-boulings/contact"
+      link: "/contact"
     },
     {
       icon: <FaUtensils className="text-2xl" />,
@@ -39,7 +39,7 @@ const ServiceCards = () => {
       description: t('services.menu.description'),
       highlight: t('services.menu.highlight'),
       bgImage: image3,
-      link: "/meness-boulings/"
+      link: "/"
     }
   ];
 
