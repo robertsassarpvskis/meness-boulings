@@ -17,7 +17,7 @@ const ContactCards = () => {
       ),
       highlight: "Atvērts katru dienu līdz pusnaktij",
       bgImage: image,
-      link: "/contact"
+      link: "/meness-boulings/contact"
     },
     {
       icon: <FaUtensils className="text-2xl" />,
@@ -32,7 +32,7 @@ const ContactCards = () => {
       ),
       highlight: "Sazinies ar mums vai apmeklē boulinga centru",
       bgImage: image2,
-      link: "/contact"
+      link: "/meness-boulings/contact"
     },
 
     {
