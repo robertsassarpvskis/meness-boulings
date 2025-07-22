@@ -16,6 +16,7 @@ export default function AppRoutes() {
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/reservation" element={<ReservationPage /> } />
+
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

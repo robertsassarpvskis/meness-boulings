@@ -1,9 +1,9 @@
 {
-  "name": "meness-boulinga",
+  "name": "meness-boulings",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://robertsassarpvskis.github.io/meness-boulinga",
+  "homepage": "https://robertsassarpvskis.github.io/meness-boulings",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -29,7 +29,7 @@
     "react-i18next": "^15.6.0",
     "react-icons": "^5.5.0",
     "react-leaflet": "^5.0.0",
-    "react-router-dom": "^7.6.3",
+    "react-router-dom": "^7.7.0",
     "swiper": "^11.2.10"
   },
   "devDependencies": {
