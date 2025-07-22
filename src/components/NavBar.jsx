@@ -51,9 +51,9 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ease-in-out py-4 px-4 sm:px-6
         ${scrolled ? 'bg-gradient-to-b from-[#6c30c2]/90 via-[#6c30c2]/70 to-transparent backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="/" className="flex items-center shrink-0">
+          <NavLink to="/" className="flex items-center shrink-0">
             <img src={logo} alt="Logo" className="w-28 sm:w-36 md:w-40 transition-all duration-300" />
-          </a>
+          </NavLink>
 
           {/* Desktop menu */}
           <div className="hidden lg:flex items-center space-x-6 lg:space-x-8">
