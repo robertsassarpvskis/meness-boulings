@@ -146,17 +146,17 @@ const ContactForm = () => {
         />
 
        <a
-              href="/rezervacija"
-              className="inline-flex items-center px-8 py-4 rounded-full text-lg font-bold bg-[#FDB927] text-[#552583] hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl shadow-[#FDB927]/30 hover:shadow-[#FDB927]/50 group"
-            >
-              <CalendarClock 
-                className="inline-block mr-3 transition-transform group-hover:scale-110" 
-                size={20} 
-                strokeWidth={2.5} 
-              />
-              Rezervēt tagad
-              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-            </a>
+          href="/rezervacija"
+          className="inline-flex items-center px-8 py-4 rounded-full text-lg font-bold bg-[#FDB927] text-[#552583] hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl shadow-[#FDB927]/30 hover:shadow-[#FDB927]/50 group"
+        >
+          <CalendarClock 
+            className="inline-block mr-3 transition-transform group-hover:scale-110" 
+            size={20} 
+            strokeWidth={2.5} 
+          />
+          Rezervēt tagad
+          <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+        </a>
 
 
       </form>
