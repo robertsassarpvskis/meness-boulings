@@ -1,5 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTiktok, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaArrowRight } from "react-icons/fa";
 import logo from "../assets/logo-white.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -63,30 +64,32 @@ const Footer = () => {
           {/* Quick links column with enhanced animations */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-8 pb-3 border-b-2 border-[#FDB927]/30 w-max hover:border-[#FDB927]/60 transition-colors duration-300 ">Saites</h3>
-            <ul className="space-y-4">
-              {[
-                { name: "Sākums", path: "/" },
-                { name: "Cenas un Piedāvājumi", path: "/price" },
-                { name: "Rezervācija", path: "/booking" },
-                { name: "Pasākumi", path: "/events" },
-                { name: "Kontakti", path: "/contact" }
-              ].map((item) => (
-                <li key={item.name}>
-                  <a 
-                    href={item.path} 
-                    className="group flex items-center text-lg hover:text-white transition-all duration-300"
-                  >
-                    <span className="mr-3 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 -translate-x-2 transition-all duration-500">
-                      <FaArrowRight className="text-sm text-[#FDB927] group-hover:rotate-180 transition-transform duration-500" />
-                    </span>
-                    <span className="relative font-semibold">
-                      {item.name}
-                      <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#FDB927] transition-all duration-500 group-hover:w-full"></span>
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+           
+
+              <ul className="space-y-4">
+                {[
+                  { name: "Sākums", path: "/" },
+                  { name: "Cenas un Piedāvājumi", path: "/price" },
+                  { name: "Rezervācija", path: "/booking" },
+                  { name: "Pasākumi", path: "/events" },
+                  { name: "Kontakti", path: "/contact" }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link 
+                      to={item.path} 
+                      className="group flex items-center text-lg hover:text-white transition-all duration-300"
+                    >
+                      <span className="mr-3 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 -translate-x-2 transition-all duration-500">
+                        <FaArrowRight className="text-sm text-[#FDB927] group-hover:rotate-180 transition-transform duration-500" />
+                      </span>
+                      <span className="relative font-semibold">
+                        {item.name}
+                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#FDB927] transition-all duration-500 group-hover:w-full"></span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
           </div>
 
           {/* Contact column with enhanced interaction */}

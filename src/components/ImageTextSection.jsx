@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import GradientCard from './GradientCard';
 import image from '../assets/header.jpg';
+import { Link } from 'react-router-dom';
 
 const ImageTextSection = () => {
   const { t } = useTranslation('home');
@@ -84,12 +85,12 @@ const ImageTextSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-6 sm:mt-8">
-            <a 
-              className="bg-[#552583] hover:bg-[#552583]/90 text-white font-bold py-2.5 px-6 sm:py-3 sm:px-8 rounded-xl transition-all duration-300 shadow-md" 
-              href="/contact"
+            <Link
+              to="/reservation"
+              className="bg-[#552583] hover:bg-[#552583]/90 text-white font-bold py-2.5 px-6 sm:py-3 sm:px-8 rounded-xl transition-all duration-300 shadow-md inline-block"
             >
               {t('about_us.buttons.reserve')}
-            </a>
+            </Link>
             <a 
               className="bg-transparent hover:bg-[#552583]/10 text-[#552583] font-bold py-2.5 px-6 sm:py-3 sm:px-8 rounded-xl border-2 border-[#552583] transition-all duration-300"
               href="#"

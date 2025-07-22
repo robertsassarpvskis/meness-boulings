@@ -4,6 +4,8 @@ import PricePage from '../pages/PricePage';
 import ContactPage from '../pages/ContactPage';
 import GalleryPage from '../pages/GalleryPage';
 import AboutPage from '../pages/AboutPage';
+import NotFoundPage from '../pages/404';
+import ReservationPage from '../pages/ReservationPage';
 
 export default function AppRoutes() {
   return (
@@ -13,7 +15,8 @@ export default function AppRoutes() {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="*" element={<div>Page Not Found</div>} />
+      <Route path="/reservation" element={<ReservationPage /> } />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }

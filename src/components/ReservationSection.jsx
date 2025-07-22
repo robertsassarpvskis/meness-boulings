@@ -5,7 +5,7 @@ import {
 } from "react-icons/fa";
 import { AlarmClock, CalendarClock } from "lucide-react";
 import ReservationInfo from "./home/ReservationInfo";
-
+import { Link } from 'react-router-dom'; // ← tas ir svarīgi!
 const ReservationSection = () => {
   return (
     <section
@@ -42,8 +42,8 @@ const ReservationSection = () => {
             </p>
 
             {/* CTA Button */}
-            <a
-              href="/rezervacija"
+            <Link
+              to="/reservation" 
               className="inline-flex items-center px-8 py-4 rounded-full text-lg font-bold bg-[#FDB927] text-[#552583] hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl shadow-[#FDB927]/30 hover:shadow-[#FDB927]/50 group"
             >
               <CalendarClock
@@ -53,7 +53,7 @@ const ReservationSection = () => {
               />
               Rezervēt tagad
               <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-            </a>
+            </Link>
           </div>
 
           {/* Right content - info cards */}

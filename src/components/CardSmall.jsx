@@ -1,12 +1,13 @@
 import { FaArrowRight } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'; // ← tas ir svarīgi!
 
 const CardSmall = ({ icon, title, description, highlight, bgImage, link, children }) => {
   const { t } = useTranslation('translation');
 
   return (
-    <a
-      href={link}
+    <Link
+      to={link} // ← izmanto to, nevis href
       className="block relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 group h-full min-h-[380px] border-2 border-[#552583]/10 hover:border-[#552583]/30"
       style={{
         transform: 'perspective(1000px)',
@@ -53,11 +54,10 @@ const CardSmall = ({ icon, title, description, highlight, bgImage, link, childre
               {highlight}
             </p>
           )}
-            {children}
+          {children}
           <div className="inline-flex items-center font-medium text-white group-hover:text-[#FDB927] transition-colors">
             <span className="relative text-lg after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#FDB927] after:transition-all after:duration-500 group-hover:after:w-full">
               {t('common.learn_more')}
-
             </span>
             <FaArrowRight className="ml-4 group-hover:translate-x-3 group-hover:rotate-180 transition-transform duration-500" />
           </div>
@@ -74,7 +74,7 @@ const CardSmall = ({ icon, title, description, highlight, bgImage, link, childre
 
       {/* Border glow */}
       <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#FDB927]/30 transition-all duration-700 pointer-events-none"></div>
-    </a>
+    </Link>
   );
 };
 
