@@ -60,15 +60,14 @@ const ServiceCards = () => {
   return (
     <div className="max-w-7xl mx-auto py-24 relative">
       {isLargeScreen ? (
-        // Static layout for large screens: show cards in 3 columns grid
         <div className="grid grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <CardSmall key={index} {...card} />
           ))}
         </div>
       ) : (
-        // Swiper slider for smaller screens
-        <>
+  
+        <div className="relative z-10 min-h-[420px]">
           <Swiper
             modules={[Navigation, Pagination]}
             navigation={{
@@ -85,37 +84,28 @@ const ServiceCards = () => {
             breakpoints={{
               320: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              // No slidesPerView for 1024+ because swiper not rendered there
             }}
             className="relative z-10"
           >
             {cards.map((card, index) => (
-              <SwiperSlide key={index}>
-                <CardSmall {...card} />
+              <SwiperSlide key={index} className="!h-auto">
+                <div className="h-full min-h-[420px] flex">
+                  <CardSmall {...card} />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
+          {/* Arrows positioned below swiper */}
+          <div className="absolute top-[95%] w-full mt-4 flex justify-between px-6">
+            <div className="swiper-button-prev-custom custom-arrow left-30">❮</div>
+            <div className="swiper-button-next-custom custom-arrow right-30">❯</div>
+          </div>
+
           {/* Custom Pagination */}
-             <div className="swiper-pagination-custom mt-6 flex justify-center gap-2" />
+          <div className="swiper-pagination-custom mt-16 flex justify-center gap-2" />
+        </div>
 
-      {/* Custom Arrows */}
-      <div className="swiper-button-prev-custom absolute top-1/2 left-4 -translate-y-1/2 bg-[#552583] text-[#FDB927] p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition">
-        ❮
-      </div>
-      <div className="swiper-button-next-custom absolute top-1/2 right-4 -translate-y-1/2 bg-[#552583] text-[#FDB927] p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition">
-        ❯
-      </div>
-
-      {/* Custom Styles */}
-      {/* Custom Arrows */}
-    <div className="swiper-button-prev-custom custom-arrow left-4">
-    ❮
-    </div>
-    <div className="swiper-button-next-custom custom-arrow right-4">
-    ❯
-    </div>
-        </>
       )}
 
       {/* Custom Styles */}
@@ -151,12 +141,11 @@ const ServiceCards = () => {
 
     .custom-arrow {
         position: absolute;
-        top: 50%;
         transform: translateY(-50%);
         background: #552583;
         color: #FDB927;
         padding: 0.75rem;
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         font-weight: bold;
         border: 3px solid #FDB927;
         border-radius: 9999px;
@@ -169,7 +158,7 @@ const ServiceCards = () => {
     @media (min-width: 640px) {
       .custom-arrow {
         padding: 1.25rem;
-        font-size: 1.75rem;
+        font-size: 2rem;
       }
     }
 

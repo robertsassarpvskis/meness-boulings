@@ -34,7 +34,6 @@ const ContactCards = () => {
       bgImage: image2,
       link: "/meness-boulings/contact"
     },
-
     {
       icon: <FaBowlingBall className="text-2xl" />,
       title: "Cenas un apavu īre",
@@ -49,7 +48,6 @@ const ContactCards = () => {
       bgImage: image,
       link: "/pricing"
     }
-
   ];
 
   return (

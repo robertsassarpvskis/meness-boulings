@@ -6,14 +6,12 @@ const CardSmall = ({ icon, title, description, highlight, bgImage, link, childre
   const { t } = useTranslation('translation');
 
   return (
-    <Link
-      to={link} // ← izmanto to, nevis href
-      className="block relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 group h-full min-h-[380px] border-2 border-[#552583]/10 hover:border-[#552583]/30"
-      style={{
-        transform: 'perspective(1000px)',
-        transformStyle: 'preserve-3d'
-      }}
-    >
+      <Link
+        to={link}
+        className="block relative rounded-3xl overflow-hidden transition-all duration-500 group h-full min-h-[420px] border-2 border-[#552583]/10 hover:border-[#552583]/30"
+      >
+
+
       {/* Background image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"

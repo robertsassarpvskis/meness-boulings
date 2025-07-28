@@ -37,7 +37,7 @@ const GallerySwiper = ({ galerijasAtteli }) => {
         {galerijasAtteli.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative h-60 sm:h-80 md:h-[400px] lg:h-[500px] xl:h-[580px] w-full rounded-3xl overflow-hidden  bg-cover bg-center"
+              className="relative h-[460px] md:h-[400px] lg:h-[500px] xl:h-[580px] w-full rounded-3xl overflow-hidden  bg-cover bg-center"
             >
               <img
                 src={img}
